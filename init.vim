@@ -1,50 +1,47 @@
-" ÉèÖÃĞĞºÅ
+" è®¾ç½®è¡Œå·
 set number
 
 set clipboard=unnamed
 
-" ¸ßÁÁ
+" é«˜äº®
 syntax on
 
-" Ö÷Ìâ
-set background=dark
-
-" F2 ½øÈëÕ³ÌùÄ£Ê½
+" F2 è¿›å…¥ç²˜è´´æ¨¡å¼
 set pastetoggle=<F2>
 
-" ¸ßÁÁËÑË÷
+" é«˜äº®æœç´¢
 set hlsearch
 
-" ÉèÖÃÕÛµş·½Ê½
+" è®¾ç½®æŠ˜å æ–¹å¼
 set foldmethod=indent
 
-" vim ÂÒÂë
+" vim ä¹±ç 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8
 
-" ±£´æ
+" ä¿å­˜
 let mapleader=","
 inoremap <leader>w <Esc>:w<cr>
 nnoremap <leader>w <Esc>:w<cr>
 
-" ½øÈë normal Ä£Ê½
+" è¿›å…¥ normal æ¨¡å¼
 inoremap jj <Esc>
 
-" buffer ÇĞ»»
+" buffer åˆ‡æ¢
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> [a :bnext<CR>
 
-" ´°¿ÚÒÆ¶¯
+" çª—å£ç§»åŠ¨
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" ¿Õ¸ñÑ¡ÖĞÕû¸öµ¥´Ê
+" ç©ºæ ¼é€‰ä¸­æ•´ä¸ªå•è¯
 nnoremap <space> viw
 
-" Ö±½Ó»»ĞĞ
+" ç›´æ¥æ¢è¡Œ
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 
@@ -55,52 +52,50 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'mhinz/vim-startify'
 
-" ÃÀ»¯ÏÂÃæĞÅÏ¢À¸
+" ç¾åŒ–ä¸‹é¢ä¿¡æ¯æ 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Ëõ½øÏß
+" ç¼©è¿›çº¿
 Plug 'Yggdroot/indentLine'
-
-" Ö÷Ìâ
 
 " tree
 " ,t: toogle tree
 " ,f: focus file
 Plug 'preservim/nerdtree'
 
-" Ä£ºıËÑË÷ÎÄ¼ş ctrl + p
+" æ¨¡ç³Šæœç´¢æ–‡ä»¶ ctrl + p
 Plug 'ctrlpvim/ctrlp.vim'
 
-" ss Ä£ºıËÑË÷Á½¸ö×Ö·û¶¨Î»
+" ss æ¨¡ç³Šæœç´¢ä¸¤ä¸ªå­—ç¬¦å®šä½
 Plug 'easymotion/vim-easymotion'
 
-" ËÑË÷
-" :Files [path]: Õ¹Ê¾µ±Ç°Ä¿Â¼ÏÂÎÄ¼ş
-" :Ag: ËÑË÷µ±Ç°ÎÄ¼şµ¥´Ê£¬Î´ÅäÖÃ
+" æœç´¢
+" :Files [path]: å±•ç¤ºå½“å‰ç›®å½•ä¸‹æ–‡ä»¶
+" :Ag: æœç´¢å½“å‰æ–‡ä»¶å•è¯ï¼Œæœªé…ç½®
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" ËÑË÷Ìæ»»
+" æœç´¢æ›¿æ¢
 " :Far [word1] [word2] [path/filename]
-" :Fardo: È·¶¨É¾³ı
+" :Fardo: ç¡®å®šåˆ é™¤
 Plug 'brooth/far.vim'
 
-" Î´ÅäÖÃ tagbar ä¯ÀÀ´úÂë -> idea ctrl + f12
+" æœªé…ç½® tagbar æµè§ˆä»£ç  -> idea ctrl + f12
 Plug 'majutsushi/tagbar'
 
-" ¸ßÁÁ
-" ,k: ¸ßÁÁÑ¡ÖĞ
-" ,K: È¡ÏûËùÓĞÑ¡ÖĞ
+" é«˜äº®
+" ,k: é«˜äº®é€‰ä¸­
+" ,K: å–æ¶ˆæ‰€æœ‰é€‰ä¸­
 Plug 'lfv89/vim-interestingwords'
 
 " git
-" :Gblame ²é¿´Ã¿ĞĞ´úÂë±àĞ´ÈË
+" :Gblame æŸ¥çœ‹æ¯è¡Œä»£ç ç¼–å†™äºº
 " :Gdiff
 " :Gstatus
 Plug 'tpope/vim-fugitive'
 
-" ÏÔÊ¾ git ÖĞÎÄ¼ş±ä¸ü
+" æ˜¾ç¤º git ä¸­æ–‡ä»¶å˜æ›´
 Plug 'airblade/vim-gitgutter'
 
 " git commit
@@ -110,28 +105,39 @@ Plug 'junegunn/gv.vim'
 " console
 "Plug 'preservim/vimux'
 
+" ä¸»é¢˜
+Plug 'rakr/vim-one'
+
 call plug#end()
 
-" tree ²Ù×÷
+let g:airline_theme='one'
+" ä¸»é¢˜
+set background=dark
+colorscheme one
+
+
+" tree æ“ä½œ
 nnoremap <leader>t :NERDTreeToggle<cr>
 nnoremap <leader>f :NERDTreeFind<cr>
 
-" Ä£ºıËÑË÷
+" æ¨¡ç³Šæœç´¢
 let g:ctrlp_map = '<c-p>'
 
-" ´°¿Úµ÷Õû
+" çª—å£è°ƒæ•´
 nnoremap w= :resize +3<CR>
 nnoremap w- :resize -3<CR>
 nnoremap w, :vertical resize -3<CR>
 nnoremap w. :vertical resize +3<CR>
 
-" Á½¸ö×Ö·ûÄ£ºıËÑË÷
+" ä¸¤ä¸ªå­—ç¬¦æ¨¡ç³Šæœç´¢
 nmap ss <Plug>(easymotion-s2)
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
 
-" git add/modify/delete files ±ê¼ÇË¢ĞÂÊ±¼ä
+" git add/modify/delete files æ ‡è®°åˆ·æ–°æ—¶é—´
 set updatetime=100 " 100 ms
+
+
 
 

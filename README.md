@@ -72,6 +72,7 @@ word：以空白符分割的单词，Word以空白符分割的单词
 ### 窗口移动：
 
 - <ctrl + w> + w: 循环移动
+- <ctrl + w> + p: 跳转到上一个窗口
 - <ctrl + w> + h/j/k/l: 光标切换窗口
 - <ctrl + w> + H/J/K/L: 窗口移动
 
@@ -92,6 +93,10 @@ word：以空白符分割的单词，Word以空白符分割的单词
 - :tabn[ext] {n} 或 {n}gt: 切换到编号为n的标签页
 - :tabn[ext] 或 gt: 切换到下一个标签页
 - :tabp[revious] 或 gT: 切换到上一个标签页
+
+## 窗口移动
+
+- <ctrl + w> L: 当前窗口移动到右边
 
 ## 复制黏贴
 
@@ -121,3 +126,11 @@ word：以空白符分割的单词，Word以空白符分割的单词
 
 - :colorscheme <name>: 修改
 
+
+
+# ctrlp
+
+- <ctrl + j/k>: 上下选择
+- <ctrl + x>: 水平分屏打开文件
+- <ctrl + v>: 垂直分屏
+- <ctrl + t>: 在 tab 中打开
